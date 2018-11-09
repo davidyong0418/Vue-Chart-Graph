@@ -4,7 +4,6 @@ const path = require('path');
 app = express();
 app.use(serveStatic(path.join(__dirname, 'dist')));
 const port = process.env.PORT || 3000;
-console.log("dsafsadfsadfsadfsa");
 const redirectUlr='<a href="' + '/' +'">Redirect</a>';
 app.get('/login', function (req, res) {
     res.send(redirectUlr);  

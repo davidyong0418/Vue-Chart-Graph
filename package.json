@@ -9,14 +9,12 @@
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "build": "NODE_ENV=prod node build/build.js",
-    "start": "NODE_ENV=prod node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "apexcharts": "^2.2.0",
     "axios": "^0.18.0",
     "config": "^2.0.1",
-    "cors": "^2.8.5",
-    "cors-anywhere": "^0.4.1",
     "express": "4.16.2",
     "jso": "^4.1.1",
     "serve-static": "^1.13.2",
