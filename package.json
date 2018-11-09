@@ -9,7 +9,7 @@
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "build": "NPM_CONFIG_PRODUCTION=false node build/build.js",
-    "start": "NPM_CONFIG_PRODUCTION=false node server.js"
+    "start": "npm install && NPM_CONFIG_PRODUCTION=false node server.js"
   },
   "dependencies": {
     "apexcharts": "^2.2.0",
