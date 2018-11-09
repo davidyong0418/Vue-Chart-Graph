@@ -49,7 +49,7 @@ const actions = {
         let client = new JSO({
             response_type: 'code',
             providerID: 'google',
-            client_id: '1053680205939-2lk9e9ijv5r866icscil8duoai0tustb.apps.googleusercontent.com',
+            client_id: '1053680205939-7e49vkiubsi4t27sg9k9rdmns292ofq7.apps.googleusercontent.com',
             redirect_uri: process.env.ROOT_API, // The URL where you is redirected back, and where you perform run the callback() function.
             authorization: 'https://accounts.google.com/o/oauth2/auth',
             scopes: {request: ['https://www.googleapis.com/auth/drive.metadata.readonly']},
