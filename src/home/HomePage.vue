@@ -90,7 +90,7 @@ export default {
             deleteUser: 'delete'
         }),
         loadChartData(){
-            axios.get('https://www.gbm.com.mx/Mercados/ObtenerDatosGrafico?empresa=IPC', {header:{'Allow-Control-Allow-Origin': '*'}})
+            axios.get('https://www.gbm.com.mx/Mercados/ObtenerDatosGrafico?empresa=IPC', { headers: { 'Access-Control-Allow-Origin': '*'}})
             .then(response => {
                 console.log(response)
                 for (var i=0;i<response.data.resultObj.length;i++)
