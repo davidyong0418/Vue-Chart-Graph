@@ -5,7 +5,7 @@ app = express();
 app.use(serveStatic(path.join(__dirname, 'dist')));
 const port = process.env.PORT || 3000;
 console.log("dsafsadfsadfsadfsa");
-app.listen(3000, () => console.log('Gator app listening on port 3000!'));
+app.listen(port, () => console.log('Gator app listening on port 3000!'));
 
 // const express = require('express');
 // const app = express();
