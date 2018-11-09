@@ -1,5 +1,5 @@
 'use strict'
 module.exports = {
   NODE_ENV: '"production"',
-  ROOT_API: '"http://localhost:3000"'
+  ROOT_API: '"https://chartapp.herokuapp.com/"'
 }
