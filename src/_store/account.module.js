@@ -1,7 +1,6 @@
 import { userService } from '../_services';
 import { router } from '../_helpers';
 import {JSO} from 'jso'
-
 const user = JSON.parse(localStorage.getItem('user'));
 const state = user
     ? { status: { loggedIn: true }, user }
@@ -51,14 +50,14 @@ const actions = {
             response_type: 'code',
             providerID: 'google',
             client_id: '1053680205939-2lk9e9ijv5r866icscil8duoai0tustb.apps.googleusercontent.com',
-            redirect_uri: 'http://localhost:8080/account', // The URL where you is redirected back, and where you perform run the callback() function.
+            redirect_uri: process.env.ROOT_API, // The URL where you is redirected back, and where you perform run the callback() function.
             authorization: 'https://accounts.google.com/o/oauth2/auth',
             scopes: {request: ['https://www.googleapis.com/auth/drive.metadata.readonly']},
             debug: true
           });
         let opts = {
         response_type: 'code',
-        redirect_uri: 'http://localhost:8080/account'
+        redirect_uri: process.env.ROOT_API
         }
         client.getToken(opts)
     }

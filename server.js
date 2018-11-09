@@ -5,13 +5,8 @@ app = express();
 app.use(serveStatic(path.join(__dirname, 'dist')));
 const port = process.env.PORT || 3000;
 console.log("dsafsadfsadfsadfsa");
+const redirectUlr='<a href="' + '/' +'">Redirect</a>';
+app.get('/login', function (req, res) {
+    res.send(redirectUlr);  
+  });
 app.listen(port, () => console.log('Gator app listening on port 3000!'));
-
-// const express = require('express');
-// const app = express();
-
-// app.get('/', (req, res) => {
-//     res.send('An alligator approaches!');
-// });
-
-// app.listen(3000, () => console.log('Gator app listening on port 3000!'));
